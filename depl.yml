@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: solar-system-deployment
+  name: solar-system-deployment-res
 spec:
   replicas: 1
   selector:
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: solar-system-service
+  name: solar-system-service-res
 spec:
   type: NodePort
   selector:
